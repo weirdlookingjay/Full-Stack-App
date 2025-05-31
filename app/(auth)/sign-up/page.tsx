@@ -2,11 +2,12 @@
 
 import AuthForm from "@/components/AuthForm";
 import { signUpSchema } from "@/lib/validations";
-import React from "react";
 
-const page = () => {
+const signUp = async (data: any) => {};
+
+const Page = () => (
   <AuthForm
-    type="SIGN_Up"
+    type="SIGN_UP"
     schema={signUpSchema}
     defaultValues={{
       email: "",
@@ -15,7 +16,8 @@ const page = () => {
       universityId: 0,
       universityCard: "",
     }}
-    onSubmit={() => {}}
-  />;
-};
-export default page;
+    onSubmit={signUp}
+  />
+);
+
+export default Page;
