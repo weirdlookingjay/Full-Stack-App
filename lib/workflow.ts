@@ -29,7 +29,7 @@ export const sendEmail = async ({
       from: "University of Dean <coder@weirdlookingjay.com>",
       to: [email],
       subject,
-      html: signup,
+      html: signup(email),
     },
   });
 };

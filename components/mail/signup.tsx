@@ -1,4 +1,4 @@
-const signup = (fullName: string) => `
+const signup = (email: string) => `
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html>
@@ -52,7 +52,7 @@ const signup = (fullName: string) => `
 <body>
     <div class="container">
         <h1>Welcome to Our Platform!</h1>
-        <p>Hello ${fullName},</p>
+        <p>Hello ${email},</p>
         <p>We're excited to have you on board.</p>
         <p>Get ready to explore and enjoy our services.</p>
         <a href="https://full-stack-app-ruddy.vercel.app" class="btn">Get Started</a>
