@@ -26,6 +26,7 @@ export const sendEmail = async ({
       provider: resend({ token: config.env.resendToken }),
     },
     body: {
+      //fixed domain name for rsend
       from: "University of Dean <coder@weirdlookingjay.com>",
       to: [email],
       subject,
